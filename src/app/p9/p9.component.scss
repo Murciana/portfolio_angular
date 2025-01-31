@@ -56,7 +56,7 @@
 
 
     }
-    
+
     .logo {
       background-color: var(--pcolor);
       padding:16px;
@@ -66,11 +66,13 @@
       font-size: 24px;
       font-weight: 800;
       cursor: pointer;
-      background: linear-gradient(var(--pcolor), var(--pcolor), var(--pcolor));
-
+      background: linear-gradient(95deg, var(--pcolor), var(--pcolor));
+      background-position: 200% 100%;
+      transition: all 0.5s ease;
 
       &:hover{
-        background: linear-gradient(red, orange, yellow);
+        background: linear-gradient(95deg, red, orange);
+        background-position: 100% 0;
       }
     }
 
