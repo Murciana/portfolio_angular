@@ -11,11 +11,32 @@
   }
 
   .flex {
-    display:flex;
+    display: flex;
   }
 
   a, button {
     cursor: pointer;
+  }
+
+  button {
+    @extend .flex;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 8px;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &.primary {
+      background-color: var(--pcolor);
+      color: #fff;
+
+      svg {
+        fill: #fff;
+        width: 18px;
+      }
+    }
   }
 
   header {
@@ -23,8 +44,8 @@
     font-weight: 500;
 
     .menu {
+      @extend .flex;
       gap: 30px;
-      display:flex;
 
       a {
         border-bottom: 1px solid transparent;
@@ -42,7 +63,6 @@
         svg {
           width: 24px;
           height: 24px;
-
         }
 
         &.theme {
@@ -50,16 +70,14 @@
           border-radius: 50%;
           width: 24px;
           height: 24px;
+          padding: 2px;
         }
       }
-
-
-
     }
 
     .logo {
       background-color: var(--pcolor);
-      padding:16px;
+      padding: 12px;
       border-radius: 50%;
       color: #fff;
       transition:all .5s;
@@ -75,6 +93,79 @@
         background-position: 100% 0;
       }
     }
+  }
 
+  .content {
+    h1 {
+      margin: 0 0 30px;
+      font-size: 70px;
+      line-height: 65px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 0 0 30px;
+    }
+
+    .btn-wrap {
+      @extend .flex;
+      gap: 20px;
+      align-items: center;
+
+      a {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+
+    .bulb {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+
+    .hire-me {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        width : 200px;
+        height: fit-content;
+        animation: rotate-anim 5s linear infinite;
+      }
+
+      div {
+        background-color: var(--pcolor);
+        color: #fff;
+        font-weight: 600;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0px);
+      }
+    }
   }
 }
+
+@keyframes rotate-anim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
