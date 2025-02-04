@@ -18,9 +18,9 @@ body {
   color: var(--pcolor);
 
   .container {
-    // max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
-    // overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   .flex {
@@ -29,6 +29,12 @@ body {
 
   a, button {
     cursor: pointer;
+    transform: translateX(0);
+    transition: all .5s ;
+
+    &:hover{
+      transform: translateX(5px);
+    }
   }
 
   button {
@@ -49,12 +55,22 @@ body {
         fill: #fff;
         width: 18px;
       }
+
+      &:hover {
+        background-color: transparent;
+        color: var(--pcolor);
+        border-color: var(--pcolor);
+
+        svg {
+          fill: var(--pcolor);
+        }
+      }
     }
   }
 
   header {
     padding: 20px 0;
-    font-weight: 500;
+    font-weight: 600;
 
     .menu {
       @extend .flex;
@@ -65,6 +81,7 @@ body {
         padding-bottom: 4px;
         transition: all .4s;
 
+
         &:hover, &.active {
           border-bottom: 1px solid var(--pcolor);
         }
@@ -74,16 +91,24 @@ body {
         }
 
         svg {
-          width: 24px;
-          height: 24px;
+          width: 22px;
+          height: 22px;
         }
 
         &.theme {
           background-color: var(--pcolor);
           border-radius: 50%;
-          width: 24px;
-          height: 24px;
+          width: 20px;
+          height: 20px;
           padding: 2px;
+          @extend .flex ;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
     }
@@ -97,13 +122,11 @@ body {
       font-size: 24px;
       font-weight: 800;
       cursor: pointer;
-      background: linear-gradient(95deg, var(--pcolor), var(--pcolor));
-      background-position: 200% 100%;
+      // background-position: 200% 100%;
       transition: all 0.5s ease;
 
       &:hover{
-        background: linear-gradient(95deg, red, orange);
-        background-position: 100% 0;
+        animation: bg-anim 5s linear infinite;
       }
     }
   }
@@ -141,11 +164,12 @@ body {
     }
 
     .hire-me {
-      position: absolute;
+      position: fixed;
       left: 20px;
       bottom: 20px;
       display: flex;
       align-items: center;
+      z-index: 100; /* Ajoute un z-index élevé pour éviter que l'élément soit caché */
 
       svg {
         width : 200px;
@@ -163,7 +187,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 20px;
+        font-size: 18px;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0px);
@@ -181,4 +205,19 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@keyframes bg-anim {
+  0% {
+    background-color: #ff00ea;
+  }
+
+  50% {
+    background-color: #ffd900;
+  }
+
+  100% {
+    background-color: rgb(78, 51, 153);
+  }
+}
+
 
