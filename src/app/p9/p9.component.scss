@@ -16,9 +16,11 @@ body {
   font-family: "Montserrat", serif;
   font-size: 16px;
   color: var(--pcolor);
+  padding: 15px 90px 80px;
 
   .container {
     max-width: 1200px;
+    // padding: 0 90px;
     margin: 0 auto;
     overflow-x: hidden;
   }
@@ -138,11 +140,28 @@ body {
       line-height: 65px;
     }
 
+    h2 {
+      margin: 0;
+      font-size: 56px;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
     p {
       font-size: 18px;
       font-weight: 500;
       line-height: 24px;
       margin: 0 0 30px;
+
+      &.fs14 {
+        font-size: 14px;
+      }
+    }
+
+    .label {
+      color: #999;
     }
 
     .btn-wrap {
@@ -191,6 +210,47 @@ body {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0px);
+      }
+    }
+
+    h5 {
+     margin: 0 0 20px;
+     font-size: 16px;
+    }
+
+    .border {
+      border: 1px solid var(--pcolor);
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 12px 12px 0px var(--pcolor);
+
+
+      img {
+        border-radius: 8px;
+      }
+    }
+
+    h3 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    ul {
+      @extend .flex;
+      padding: 0;
+      margin: 0;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        background-color: var(--pcolor);
+        list-style-type: none;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-weight: 600;
       }
     }
   }
