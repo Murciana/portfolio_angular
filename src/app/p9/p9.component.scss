@@ -274,6 +274,19 @@ body {
   }
 }
 
+@media(max-width: 959px) {
+  .wrap {
+    padding: 10% 10%;
+
+    .content {
+      h1 {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+}
+}
+
 @media(max-width: 599px) {
   .wrap {
     padding: 10% 10%;
