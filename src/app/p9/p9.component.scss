@@ -1,14 +1,7 @@
-*{
-  padding: 0;
-  margin: 0;
-  // box-sizing:border-box;
-  // box-shadow: 0 0 0 3px red inset;
-  /* ajout d'une bordure intérieure à chaque élément*/
-}
 body {
   margin:0;
-  height: 100vh;
-  width:100vw;
+  // height: 100vh;
+  // width:100vw;
 }
 .wrap {
   --pcolor: #1b1b1b;
@@ -16,13 +9,13 @@ body {
   font-family: "Montserrat", serif;
   font-size: 16px;
   color: var(--pcolor);
-  padding: 15px 90px 80px;
+  padding: 15px 110px 80px;
 
   .container {
-    max-width: 1200px;
+    max-width: 100%;
     // padding: 0 90px;
     margin: 0 auto;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 
   .flex {
