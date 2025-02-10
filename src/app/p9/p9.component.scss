@@ -1,4 +1,5 @@
 body {
+  //TODO régler le pb car ne s'affiche pas actuellement
   margin:0;
   // height: 100vh;
   // width:100vw;
@@ -275,10 +276,16 @@ body {
 
 @media(max-width: 599px) {
   .wrap {
+    padding: 10% 10%;
+
     .content {
       h1 {
         font-size: 40px;
         line-height: 40px;
+      }
+
+      h2 {
+        font-size: 36px;
       }
 
       .hire-me {
@@ -295,8 +302,13 @@ body {
         div {
           width: 60px;
           height: 60px;
-          font-size: 10px;
+          font-size: 12px;
         }
+      }
+
+      ul {
+        align-items: start;
+        justify-content: start;
       }
     }
   }

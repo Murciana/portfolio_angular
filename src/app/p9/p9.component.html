@@ -44,8 +44,8 @@
       </ng-container>
 
       <ng-container *ngIf="view === 'about'">
-      <div class="content" fxFlex="100%" fxLayout="column" fxLayoutGap="60px" fxLayoutAlign="center center">
-        <h1>Voila Voila Voila !</h1>
+      <div class="content" fxFlex="100%" fxLayout="column" fxLayoutGap="60px" fxLayoutGap.lt-sm="30px" fxLayoutAlign="center center" fxLayoutAlign.lt-sm="start start">
+        <h1>Voila Voila Voila!</h1>
         <div fxFlex="100%" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="60px" fxLayoutGap.lt-sm="30px">
           <div fxFlex="33.3%" fxFlex.lt-sm="100%">
             <h5 class="label">A PROPOS DE MOI</h5>
