@@ -1,0 +1,97 @@
+header {
+  padding: 20px 0;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Empêche le header de passer sur plusieurs lignes */
+
+  .menu {
+    display: flex;
+    gap: 30px;
+
+    a {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 4px;
+      transition: all .4s;
+
+
+      &:hover, &.active {
+        border-bottom: 1px solid var(--pcolor);
+      }
+
+      &.border0 {
+        border: 0;
+      }
+
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      &.theme {
+        background-color: var(--pcolor);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        padding: 2px;
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    background-color: var(--pcolor);
+    padding: 12px;
+    border-radius: 50%;
+    color: #fff;
+    transition:all .5s;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+    // background-position: 200% 100%;
+    transition: all 0.5s ease;
+
+    &:hover{
+      animation: bg-anim 5s linear infinite;
+    }
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    background-color: #ff00ea;
+  }
+
+  50% {
+    background-color: #ffd900;
+  }
+
+  100% {
+    background-color: rgb(78, 51, 153);
+  }
+}
+
+
+// @media (max-width: 599px) {
+//   header {
+//     flex-direction: column; /* Passe le header en colonne uniquement sur petits écrans */
+//     align-items: center;
+//   }
+
+//   .menu {
+//     justify-content: center;
+//   }
+
+//   .menu:last-child {
+//     display: none; /* Cache les icônes sociales sur mobile */
+//   }
+// }
