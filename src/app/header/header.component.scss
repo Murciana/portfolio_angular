@@ -12,6 +12,8 @@ header {
     gap: 30px;
 
     a {
+      cursor: pointer;
+      transform: translateX(0);
       border-bottom: 1px solid transparent;
       padding-bottom: 4px;
       transition: all .4s;
@@ -19,6 +21,7 @@ header {
 
       &:hover, &.active {
         border-bottom: 1px solid var(--pcolor);
+        transform: translateX(5px);
       }
 
       &.border0 {

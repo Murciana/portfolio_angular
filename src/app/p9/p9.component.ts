@@ -11,6 +11,9 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 })
 export class P9Component  {
   view: string = 'home';
+  // view: string = 'about';
+  // view: string = 'project';
+
 
   handleView(selectedView: string) {
     this.view = selectedView;

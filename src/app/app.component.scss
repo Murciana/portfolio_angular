@@ -1,3 +1,6 @@
+* {
+  // outline: 1px solid red; /* Permet de voir quels éléments sont affectés */
+}
 .wrap {
   //TODO régler le pb car ne s'affiche pas actuellement
   margin:0;
@@ -5,7 +8,7 @@
   font-family: "Montserrat", serif;
   font-size: 16px;
   color: var(--pcolor);
-  padding: 15px 110px 80px;
+  padding: 0 100px 80px;
   // height: 100vh;
   // width:100vw;
 
@@ -20,7 +23,7 @@
       display: flex;
     }
 
-
+    //todo - gérer les redondances avec l'effet sur hover
   a, button {
     cursor: pointer;
     transform: translateX(0);
@@ -73,4 +76,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media(max-width: 959px) {
+  .wrap {
+    padding: 10% 10%;
+
+
+}
+}
+
+
+@media(max-width: 599px) {
+  .wrap {
+    padding: 10% 10%;
+
+
+
+
+
+  }
+}
+
 
