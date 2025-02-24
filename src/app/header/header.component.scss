@@ -7,6 +7,7 @@ header {
     gap: 30px;
 
     a {
+      all: unset; /* Supprime tous les styles hérités */
       cursor: pointer;
       transform: translateX(0);
       border-bottom: 1px solid transparent;
@@ -45,6 +46,11 @@ header {
   }
 
   .logo {
+
+    a{
+      all: unset; /* Supprime tous les styles hérités */
+      text-decoration: none;
+    }
     background-color: var(--pcolor);
     padding: 12px;
     border-radius: 50%;

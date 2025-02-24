@@ -1,13 +1,16 @@
 <header fxLayout="row" fxLayoutAlign="space-between center" fxFlex="100%">
   <div class="menu" fxFlex="auto" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap.lt-md="20px">
     <!-- <div class="menu" fxLayout="row" fxLayoutGap="30px" fxFlex="1 1 auto"> -->
-    <a >Home</a>
-    <a >About</a>
-    <a >Projects</a>
-    <a >Articles</a>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+    <a routerLink="projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"  >Projects</a>
+    <a routerLink="articles" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >Articles</a>
   </div>
   <!-- <div fxFlex="100%" fxLayoutAlign="center center"> -->
-    <div class="logo" fxFlex="0 1 auto" fxLayoutAlign="center center">MLB</div>
+    <div class="logo" fxFlex="0 1 auto" fxLayoutAlign="center center">
+      <a routerLink="" >MLB</a>
+
+    </div>
   <!-- </div> -->
   <!-- <div class="logo">MLB</div> -->
   <div class="menu" fxLayout="row" fxLayoutAlign="end center" fxFlex="1 1 auto" fxHide.lt-sm>
