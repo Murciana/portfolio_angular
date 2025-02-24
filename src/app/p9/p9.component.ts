@@ -10,8 +10,8 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
   styleUrl: './p9.component.scss'
 })
 export class P9Component  {
-  view: string = 'home';
-  // view: string = 'about';
+  // view: string = 'home';
+  view: string = 'about';
   // view: string = 'project';
 
 

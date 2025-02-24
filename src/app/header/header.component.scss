@@ -2,13 +2,8 @@ header {
   padding: 20px 0;
   font-weight: 600;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* Empêche le header de passer sur plusieurs lignes */
 
   .menu {
-    display: flex;
     gap: 30px;
 
     a {
@@ -39,9 +34,7 @@ header {
         width: 20px;
         height: 20px;
         padding: 2px;
-        display: flex ;
-        align-items: center;
-        justify-content: center;
+
 
         svg {
           width: 20px;
@@ -82,19 +75,3 @@ header {
     background-color: rgb(78, 51, 153);
   }
 }
-
-
-// @media (max-width: 599px) {
-//   header {
-//     flex-direction: column; /* Passe le header en colonne uniquement sur petits écrans */
-//     align-items: center;
-//   }
-
-//   .menu {
-//     justify-content: center;
-//   }
-
-//   .menu:last-child {
-//     display: none; /* Cache les icônes sociales sur mobile */
-//   }
-// }

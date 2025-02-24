@@ -1,0 +1,176 @@
+
+a, button {
+  cursor: pointer;
+  transform: translateX(0);
+  transition: all .5s ;
+
+  &:hover{
+    transform: translateX(5px);
+  }
+}
+
+button {
+  display: flex;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 8px;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+
+  &.primary {
+    background-color: var(--pcolor);
+    color: #fff;
+
+    svg {
+      fill: #fff;
+      width: 18px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: var(--pcolor);
+      border-color: var(--pcolor);
+
+      svg {
+        fill: var(--pcolor);
+      }
+    }
+  }
+}
+
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%;
+  max-height: 100%;
+
+  h1 {
+    margin: 0 0 30px;
+    font-size: 70px;
+    line-height: 65px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 56px;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 30px;
+
+    &.fs14 {
+      font-size: 14px;
+    }
+  }
+
+  .label {
+    color: #999;
+  }
+
+  h5 {
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+
+  .border {
+    border: 1px solid var(--pcolor);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 0px var(--pcolor);
+
+
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  h3 {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      background-color: var(--pcolor);
+      list-style-type: none;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+@media(max-width: 959px) {
+  .wrap {
+    padding: 10% 10%;
+
+    .content {
+      h1 {
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+}
+}
+
+@media(max-width: 599px) {
+  .wrap {
+    padding: 10% 10%;
+
+    .content {
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
+
+      .hire-me {
+        right: 0;
+        top: 120px;
+        left: auto;
+        bottom: auto;
+
+
+        svg {
+          width: 125px;
+        }
+
+        div {
+          width: 60px;
+          height: 60px;
+          font-size: 12px;
+        }
+      }
+
+      ul {
+        align-items: start;
+        justify-content: start;
+      }
+    }
+  }
+}
