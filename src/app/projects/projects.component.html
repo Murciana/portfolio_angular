@@ -1,36 +1,44 @@
-<div class="content" fxFlex="100%" fxLayout="column" fxLayoutGap="60px" fxLayoutAlign="center center">
+<div class="content">
   <h1>My projects !</h1>
-  <div fxFlex="100%" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="60px">
-    <div fxFlex="33.3%" fxFlex.lt-sm="100%" fxLayoutAlign="center">
+
+  <div class="projects-container">
+    <div class="project-wrapper full-width">
       <div class="border">
-        <img src="assets/img/portfolio/imageNASA1.jpg" alt="" width="100%">
+        <img src="assets/img/portfolio/van_gogh_cafe.jpg" alt="">
+        <div class="project-info">
+          <div class="tags">
+            <span>{{ projects[0].projectType }}</span>
+          </div>
+          <h2>{{ projects[0].title }}</h2>
+          <p>{{ projects[0].description }}</p>
+          <a [href]="projects[0].githubLink" target="_blank" class="github-btn">View on GitHub</a>
+        </div>
       </div>
     </div>
-    <div fxFlex="33.3%" fxFlex.lt-sm="100%" fxLayoutAlign="center">
+
+    <div class="project-wrapper half-width">
       <div class="border">
-        <img src="assets/img/portfolio/van_gogh_cafe.jpg" alt="" width="100%">
+        <img src="assets/img/portfolio/imageNASA1.jpg" alt="">
+        <div class="project-info">
+          <div class="tags">
+            <span>{{ projects[1].projectType }}</span>
+          </div>
+          <h2>{{ projects[1].title }}</h2>
+          <a [href]="projects[1].githubLink" target="_blank" class="github-btn">View on GitHub</a>
+        </div>
       </div>
     </div>
-    <div fxFlex="33.3%" fxFlex.lt-sm="100%" fxLayoutAlign="center">
+
+    <div class="project-wrapper half-width">
       <div class="border">
-        <img src="assets/img/portfolio/imageNASA1.jpg" alt="" width="100%">
-      </div>
-    </div>
-  </div>
-  <div fxFlex="100%" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="60px">
-    <div fxFlex="33.3%" fxFlex.lt-sm="100%" fxLayoutAlign="center">
-      <div class="border">
-        <img src="assets/img/portfolio/van_gogh_cafe.jpg" alt="" width="100%">
-      </div>
-    </div>
-    <div fxFlex="33.3%" fxFlex.lt-sm="100%" fxLayoutAlign="center">
-      <div class="border">
-        <img src="assets/img/portfolio/imageNASA1.jpg" alt="" width="100%">
-      </div>
-    </div>
-    <div fxFlex="33.3%" fxFlex.lt-sm="100%" fxLayoutAlign="center">
-      <div class="border">
-        <img src="assets/img/portfolio/van_gogh_cafe.jpg" alt="" width="100%">
+        <img src="assets/img/portfolio/van_gogh_cafe.jpg" alt="">
+        <div class="project-info">
+          <div class="tags">
+            <span>{{ projects[2].projectType }}</span>
+          </div>
+          <h2>{{ projects[2].title }}</h2>
+          <a [href]="projects[2].githubLink" target="_blank" class="github-btn">View on GitHub</a>
+        </div>
       </div>
     </div>
   </div>

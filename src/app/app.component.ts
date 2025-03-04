@@ -5,8 +5,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ArticlesComponent } from './articles/articles.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ArticlesComponent,
+    ContactComponent,
     FooterComponent
   ] ,
   templateUrl: './app.component.html',

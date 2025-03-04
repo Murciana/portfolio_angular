@@ -3,7 +3,7 @@ import { P9Component } from './p9/p9.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ArticlesComponent } from './articles/articles.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -11,5 +11,5 @@ export const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'about' , component: AboutComponent},
   {path: 'projects' , component: ProjectsComponent},
-  {path: 'articles' , component: ArticlesComponent}
+  {path: 'contact' , component: ContactComponent}
 ];
